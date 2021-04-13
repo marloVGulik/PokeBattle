@@ -6,6 +6,7 @@ namespace PB
         std::cout << "New action (Empty)\n";
     };
     Action::Action(char* name, PokemonTypes type, int hitpoints) {
+        _name = name;
         _actionType = type;
         _hitpoints = hitpoints;
     }

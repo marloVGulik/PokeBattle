@@ -6,8 +6,8 @@ namespace PB {
         _type = type;
         _health = health;
         // _attackDamage = attack;
-
-        std::cout << "New Pokemon: " << name << "\n";
+        std::cout << "New: " << _name << "\n";
+        // std::cout << "New Pokemon: " << _name << ", type: " << _type << ", health: " << _health << "\n";
     }
     Pokemon::~Pokemon() {
         delete _name;

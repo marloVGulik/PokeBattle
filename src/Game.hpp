@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <string>
 #include "Pokemon/Pokemon.hpp"
 
 namespace PB {
@@ -8,6 +9,7 @@ namespace PB {
     private:
         bool running;
         std::vector<Pokemon> pokemons;
+        std::vector<Action> actions;
     public:
         Game(/* args */);
         ~Game();

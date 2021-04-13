@@ -25,6 +25,8 @@ namespace PB {
 
         void damage(int damage, PokemonTypes type);
         void heal(int amount);
+
+        char* getName() { return _name; };
     };
     
 } // namespace PB
