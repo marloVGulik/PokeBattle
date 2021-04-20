@@ -5,6 +5,8 @@
 
 #include "Game.hpp"
 
+#include "tools/list.hpp"
+
 namespace PB {
     class Action;
 }
@@ -36,12 +38,27 @@ int main(int argc, char** argv) {
 
     // charmander.heal(5);
 
+    List<uint32_t> testList(0);
+    testList.push(12);
+    testList.push(128);
+    testList.push(124);
+    testList.push(125);
+    testList.push(126);
+    testList.push(127);
+    testList.push(123);
+
+    for(int i = 0; i < testList.size(); i++) {
+        std::cout << testList.at(i) << "\n";
+    }
+
+
     try {
         PB::Game game = PB::Game();
         game.run();
     } catch(const std::exception& e) {
         std::cerr << e.what() << '\n';
     }
+
     
 
     return 0;

@@ -37,7 +37,7 @@ namespace PB {
                     std::cin >> test;
                     health = std::stoi(test);
 
-                    // std::cout << "Adding a Pokemon called " << name << " with " << health << " health!\n";
+                    std::cout << "Adding a Pokemon called " << name << " with " << health << " health!\n";
 
                     Pokemon p = Pokemon(name, type, health);
                     pokemons.push_back(p);
@@ -93,7 +93,11 @@ namespace PB {
 
             } else if(!strncmp(test, "DEL", 3)) {
                 std::cout << "Ara ara~\n";
-
+            } else if(!strncmp(test, "INFO", 4)) {
+                std::cout << "Printing pokemon names...\n\n";
+                for(int i = 0; i < pokemons.size(); i++) {
+                    std::cout << "Pokemon " << i << ":\t" << pokemons[i].getName();
+                }
             } else if(!strncmp(test, "QUIT", 4)) {
                 running = false;
 

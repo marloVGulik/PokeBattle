@@ -4,6 +4,8 @@
 #include <string>
 #include "Pokemon/Pokemon.hpp"
 
+#include "tools/list.hpp"
+
 namespace PB {
     class Game {
     private:
