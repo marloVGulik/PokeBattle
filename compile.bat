@@ -3,6 +3,7 @@ color 0F
 
 :main
 cls
-g++ -o "bin/PokeBattle.exe" "src/main.cpp"
+g++ src/main.cpp -o bin/PB.exe
+echo Done!
 pause
 goto main
